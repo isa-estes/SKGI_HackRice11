@@ -1,14 +1,14 @@
 {
     "manifest_version": 3,
-    "name": "Demo Extension",
+    "name": "Chrome Name",
     "version": "0.1",
     "background": {
         "service_worker": "background.js"
     },
     "icons": {
-        "16": "images/pen16.png",
-        "48": "images/pen48.png",
-        "128": "images/pen128.png"
+        "16": "images/videorelaxing.png",
+        "48": "images/videorelaxing.png",
+        "128": "images/videorelaxing.png"
     },
     "permissions": [
         "tabs",

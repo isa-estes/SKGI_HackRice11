@@ -1,0 +1,92 @@
+#extension {
+  text-align: center;
+  background: #00ecb9;
+  font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: 300px;
+}
+
+#mainPage,
+#settingsPage {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#mainPage {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+#mainHeader {
+  color: #396;
+  font-size: 60%;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#mainDiv {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h2 {
+  color: #396;
+}
+
+span {
+  margin: 0 0 0 0;
+}
+
+.btn {
+  background-color: #00bf96;
+  border: 1px solid #03b992;
+}
+
+#settings {
+  background-image: url("settings_google_icon.png");
+  background-size: 30px 30px;
+  background-position: center;
+  margin: 0 0 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+#settingsHeader {
+  color: #396;
+}
+
+#home {
+  background-image: url("home_google_icon.png");
+  background-size: 30px 30px;
+  background-position: center;
+  margin: 1 0;
+  width: 30px;
+  height: 30px;
+}
+
+input[type="number"] {
+  width: 30px;
+}
+
+#startTimer,
+#stopTimer {
+  color: #ffff;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+
+#set {
+  color: #ffff;
+  background-color: #00bf96;
+  border-radius: 10px;
+  border: 1px solid #03b992;
+  width: 50px;
+  height: 30px;
+}

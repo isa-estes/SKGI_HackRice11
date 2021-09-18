@@ -1,25 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Chrome Name",
-    "version": "0.1",
+    "name": "You Deserve a Break!",
+    "version": "1.0",
+    "description": "Set a timer to take a break from work, and enjoy a video from your YouTube subscriptions to relax.",
+    "manifest_version": 2,
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"],
+        "persistent": false
     },
+
     "icons": {
-        "16": "images/videorelaxing.png",
-        "48": "images/videorelaxing.png",
-        "128": "images/videorelaxing.png"
+        "16": "videorelaxing.png",
+        "48": "videorelaxing.png",
+        "128": "videorelaxing.png"
+    },
+
+    "browser_action": {
+        "default_icon": "videorelaxing.png",
+        "default_popup": "popup.html"
     },
     "permissions": [
-        "tabs",
-        "topSites",
-        "storage"
-    ],
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["popup.js"]
-    }],
-    "action": {
-        "default_popup": "popup.html"
-    }
+        "declarativeContent",
+        "storage",
+        "tabs"
+    ]
 }

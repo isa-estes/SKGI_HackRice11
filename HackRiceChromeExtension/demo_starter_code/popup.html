@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h2>Most visited links</h2>
-<div id="mostVisited_div"></div>
-<script src="popup.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>You Deserve a Break!</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body id="extension">
+    <div id="mainPage">
+      <header id="mainHeader">
+        <h1>You Deserve a Break!</h1>
+        <button type="button" class="btn" id="settings"></button>
+      </header>
+      <div id="mainDiv">
+        <span id="timeDisplay">00:00:00</span>
+        <button type="button" class="btn" id="startTimer">Start Timer</button>
+        <button type="button" class="btn" id="stopTimer">Stop Timer</button>
+      </div>
+    </div>
+
+    <div id="settingsPage">
+      <header id="settingsHeader">
+        <h1>Settings</h1>
+        <button type="button" class="btn" id="home"></button>
+      </header>
+      <div>
+        <h2>Work For:</h2>
+        <input
+          id="WorkSprintHours"
+          type="number"
+          min="0"
+          max="12"
+          step="1"
+          name="hours"
+        />
+        <span>hrs :</span>
+        <input
+          id="WorkSprintMins"
+          type="number"
+          min="0"
+          max="59"
+          step="1"
+          name="minutes"
+        />
+        <span>mins</span>
+        <button type="button" class="btn" id="setWorkSprint">Set</button>
+        <h2>Break For:</h2>
+        <input
+          id="StretchBreakHours"
+          type="number"
+          min="0"
+          max="12"
+          step="1"
+          name="hours"
+        />
+        <span>hrs :</span>
+        <input
+          id="StretchBreakMins"
+          type="number"
+          min="0"
+          max="59"
+          step="1"
+          name="minutes"
+        />
+        <span>mins</span>
+        <button type="button" class="btn" id="setStretchBreak">Set</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+  </body>
 </html>

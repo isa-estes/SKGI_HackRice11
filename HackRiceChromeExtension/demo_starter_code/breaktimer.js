@@ -2,7 +2,9 @@
 const urls = [
     "https://www.youtube.com/embed/ZToicYcHIOU?autoplay=1",
     "https://www.youtube.com/embed/YXBh3riRMmI?autoplay=1",
-    "https://www.youtube.com/embed/B38LYJMBWqc?autoplay=1"
+    "https://www.youtube.com/embed/B38LYJMBWqc?autoplay=1",
+    "https://www.youtube.com/embed/z2PIFlnZ19Q?autoplay=1",
+    "https://www.youtube.com/embed/C4sAUc_ZGMY?autoplay=1"
 ]
 
 // Finds random element in an array

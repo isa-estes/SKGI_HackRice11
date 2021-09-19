@@ -1,3 +1,18 @@
+// List of urls from user "subscription"
+const urls = [
+    "https://www.youtube.com/embed/ZToicYcHIOU?autoplay=1",
+    "https://www.youtube.com/embed/YXBh3riRMmI?autoplay=1",
+    "https://www.youtube.com/embed/B38LYJMBWqc?autoplay=1"
+]
+
+// Finds random element in an array
+Array.prototype.random = function () {
+    return this[Math.floor((Math.random()*this.length))];
+}
+
+// Random url
+let url = urls.random();
+
 function startTimer(duration) { // duration will be in seconds
     if(duration > 0) {
         timerID = setInterval(() => {
@@ -23,6 +38,9 @@ function startTimer(duration) { // duration will be in seconds
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('startBreakTimer').addEventListener('click', function() { chrome.storage.sync.get(['stretchBreakHours', 'stretchBreakMinutes'], function(result) {
         let duration = (result.stretchBreakHours*3600) + (result.stretchBreakMinutes*60);
+        // Sets the src with the random url
+        document.getElementById("video").src = url;
         startTimer(duration);
+
     }); document.getElementById('startBreakTimer').style.visibility = 'hidden'; });
 });

@@ -1,11 +1,11 @@
 body {
     text-align: center;
-    background-color: #00ECB9;
+    background-color: #C0D8E0;
     font-family: sans-serif; 
     font-weight: 100; 
 }
 h1 { 
-    color: #396; 
+    color: #271622; 
     font-weight: 100; 
     font-size: 40px; 
     margin: 40px 0px 20px; 
@@ -20,9 +20,9 @@ h1 {
 } 
 #startBreakTimer {
     color: #ffff;
-    background-color:#00BF96;
+    background-color:#C0D8E0;
 	border-radius:10px;
-    border:1px solid #03b992;
+    border:1px solid #416165;
     width: 100px;
     height: 30px;
 }
